@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fê — Desenvolvimento Front-End</title>
+  <meta name="description" content="Portfólio de Fê, estudante de Análise e Desenvolvimento de Sistemas com foco em front-end.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="progress-rail" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a href="#top" class="logo">Fê<span class="dot">.</span></a>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" id="mainNav">
+      <a href="#sobre">sobre</a>
+      <a href="#log">log de progresso</a>
+      <a href="#projetos">projetos</a>
+      <a href="#contato">contato</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <section class="hero">
+      <p class="status-tag">status: <span class="status-live">em construção</span></p>
+      <h1 class="hero-title">
+        Aprendendo em<br>
+        <em>público,</em><br>
+        um commit por vez.
+      </h1>
+      <p class="hero-sub">
+        Sou Fê, estudante de Análise e Desenvolvimento de Sistemas, construindo experiência real
+        em front-end enquanto me preparo pra primeira vaga na área de tecnologia.
+      </p>
+      <a href="#log" class="hero-cta">ver o log de progresso ↓</a>
+    </section>
+
+    <section class="sobre" id="sobre">
+      <div class="sobre-marker">
+        <span class="ring-label">anel 01</span>
+      </div>
+      <div class="sobre-content">
+        <h2>Sobre</h2>
+        <p>
+          Estou no meio da graduação em Análise e Desenvolvimento de Sistemas e é no front-end
+          que eu me sinto mais em casa — pensar em como uma interface se comporta, como ela guia
+          quem está do outro lado da tela.
+        </p>
+        <p>
+          Este site é o meu caderno de campo: em vez de guardar o aprendizado só pra mim,
+          registro aqui cada etapa, cada decisão de layout, cada coisa nova que testei.
+          Cresce como uma árvore cresce — em anéis, um por vez, sem pressa de já sair perfeito.
+        </p>
+      </div>
+    </section>
+
+    <section class="log" id="log">
+      <h2>Log de progresso</h2>
+      <p class="log-intro">Um registro do que foi mudando por aqui, semana a semana.</p>
+      <ul class="log-list">
+        <li class="log-entry">
+          <span class="log-hash">v0.1</span>
+          <span class="log-date">semana 1</span>
+          <span class="log-desc">estrutura do site e conteúdo inicial no ar</span>
+        </li>
+      </ul>
+    </section>
+
+    <section class="projetos" id="projetos">
+      <h2>Projetos</h2>
+      <div class="project-grid">
+
+        <article class="project-card">
+          <span class="project-tag">em andamento</span>
+          <h3>Cadastro de Pessoas — Jakarta Faces + PrimeFaces</h3>
+          <p>
+            Aplicação MVC para a disciplina de Tópicos Especiais em Desenvolvimento de Software III:
+            listagem, cadastro, edição e exclusão de registros, com ordenação e pesquisa por coluna.
+          </p>
+          <div class="project-links">
+            <span class="project-link disabled">repositório em breve</span>
+          </div>
+        </article>
+
+        <article class="project-card placeholder">
+          <span class="project-tag">próximo anel</span>
+          <h3>Este espaço está esperando o próximo projeto</h3>
+          <p>Cada semana este site ganha uma camada nova. Volte em breve.</p>
+        </article>
+
+      </div>
+    </section>
+
+    <section class="contato" id="contato">
+      <h2>Vamos conversar</h2>
+      <p>Estou em busca da minha primeira oportunidade em tecnologia — se você tem uma vaga, ideia ou feedback, me chama.</p>
+      <div class="contact-links">
+        <a href="#" class="contact-link">e-mail</a>
+        <a href="#" class="contact-link">linkedin</a>
+        <a href="#" class="contact-link">github</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>construído linha por linha, commit por commit.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
