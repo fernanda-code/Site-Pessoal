@@ -29,7 +29,7 @@ updateProgress();
 
 // Reveal suave dos elementos ao entrar na tela
 const revealTargets = document.querySelectorAll(
-  '.sobre-content, .log-entry, .project-card, .contato h2, .contato p, .contact-links'
+  '.sobre-content, .project-card, .contato h2, .contato p, .contact-links'
 );
 revealTargets.forEach((el) => el.classList.add('reveal'));
 

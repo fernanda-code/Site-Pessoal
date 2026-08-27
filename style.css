@@ -1,3 +1,6 @@
+/* ============================================
+   TOKENS
+   ============================================ */
 :root {
   --ink: #1a2420;
   --parchment: #edead8;
@@ -39,6 +42,9 @@ a { color: inherit; }
 
 section { padding: var(--gap) clamp(1.25rem, 6vw, 6rem); }
 
+/* ============================================
+   GROWTH-RING PROGRESS RAIL (signature element)
+   ============================================ */
 .progress-rail {
   position: fixed;
   top: 0;
@@ -50,6 +56,9 @@ section { padding: var(--gap) clamp(1.25rem, 6vw, 6rem); }
   transition: width 0.1s linear;
 }
 
+/* ============================================
+   HEADER
+   ============================================ */
 .site-header {
   position: sticky;
   top: 0;
@@ -108,6 +117,9 @@ section { padding: var(--gap) clamp(1.25rem, 6vw, 6rem); }
   display: block;
 }
 
+/* ============================================
+   HERO
+   ============================================ */
 .hero {
   padding-top: clamp(4rem, 12vh, 7rem);
   padding-bottom: clamp(4rem, 12vh, 7rem);
@@ -170,6 +182,9 @@ section { padding: var(--gap) clamp(1.25rem, 6vw, 6rem); }
 }
 .hero-cta:hover { color: var(--moss-dark); border-color: var(--moss-dark); }
 
+/* ============================================
+   SOBRE
+   ============================================ */
 .sobre {
   display: grid;
   grid-template-columns: 8rem 1fr;
@@ -188,47 +203,9 @@ section { padding: var(--gap) clamp(1.25rem, 6vw, 6rem); }
 .sobre-content p { color: var(--slate); }
 .sobre-content p:first-of-type { color: var(--ink); }
 
-.log {
-  border-top: 1px solid var(--parchment-dim);
-}
-.log-intro { color: var(--slate); margin-top: -0.5rem; }
-
-.log-list {
-  list-style: none;
-  margin: 2rem 0 0;
-  padding: 0;
-  border-left: 2px solid var(--parchment-dim);
-}
-.log-entry {
-  display: grid;
-  grid-template-columns: 4.5rem 6rem 1fr;
-  gap: 1rem;
-  align-items: baseline;
-  padding: 0.75rem 0 0.75rem 1.5rem;
-  position: relative;
-}
-.log-entry::before {
-  content: "";
-  position: absolute;
-  left: -6px;
-  top: 1.1rem;
-  width: 10px; height: 10px;
-  border-radius: 50%;
-  background: var(--amber);
-  border: 2px solid var(--parchment);
-}
-.log-hash {
-  font-family: var(--font-mono);
-  color: var(--moss-dark);
-  font-weight: 500;
-}
-.log-date {
-  font-family: var(--font-mono);
-  font-size: 0.8rem;
-  color: var(--slate);
-}
-.log-desc { color: var(--ink); }
-
+/* ============================================
+   PROJETOS
+   ============================================ */
 .projetos { border-top: 1px solid var(--parchment-dim); }
 
 .project-grid {
@@ -276,6 +253,9 @@ section { padding: var(--gap) clamp(1.25rem, 6vw, 6rem); }
 }
 .project-link.disabled { color: var(--slate); font-style: italic; }
 
+/* ============================================
+   CONTATO
+   ============================================ */
 .contato {
   border-top: 1px solid var(--parchment-dim);
   max-width: 34rem;
@@ -295,6 +275,9 @@ section { padding: var(--gap) clamp(1.25rem, 6vw, 6rem); }
 }
 .contact-link:hover { border-color: var(--amber); color: var(--moss-dark); }
 
+/* ============================================
+   FOOTER
+   ============================================ */
 .site-footer {
   text-align: center;
   padding: 2rem;
@@ -304,6 +287,9 @@ section { padding: var(--gap) clamp(1.25rem, 6vw, 6rem); }
   border-top: 1px solid var(--parchment-dim);
 }
 
+/* ============================================
+   REVEAL ON SCROLL
+   ============================================ */
 .reveal {
   opacity: 0;
   transform: translateY(16px);
@@ -319,6 +305,9 @@ section { padding: var(--gap) clamp(1.25rem, 6vw, 6rem); }
   .status-live::before { animation: none; }
 }
 
+/* ============================================
+   RESPONSIVE
+   ============================================ */
 @media (max-width: 720px) {
   .nav-toggle { display: flex; }
   .nav {
@@ -339,7 +328,4 @@ section { padding: var(--gap) clamp(1.25rem, 6vw, 6rem); }
 
   .sobre { grid-template-columns: 1fr; }
   .sobre-marker { display: none; }
-
-  .log-entry { grid-template-columns: 4rem 1fr; }
-  .log-date { display: none; }
 }
