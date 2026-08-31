@@ -5,10 +5,10 @@
   --ink: #1a2420;
   --parchment: #edead8;
   --parchment-dim: #e2ded0;
-  --moss: #52735c;
-  --moss-dark: #3a5443;
+  --rose: #c98ba0;
+  --rose-dark: #7a3d52;
   --amber: #c9973b;
-  --slate: #5c6b64;
+  --rose-slate: #7d5a63;
 
   --font-display: "Fraunces", serif;
   --font-body: "IBM Plex Sans", sans-serif;
@@ -83,7 +83,7 @@ section { padding: var(--gap) clamp(1.25rem, 6vw, 6rem); }
   left: 0;
   height: 3px;
   width: 0%;
-  background: linear-gradient(90deg, var(--moss), var(--amber));
+  background: linear-gradient(90deg, var(--rose), var(--amber));
   z-index: 200;
   transition: width 0.1s linear;
 }
@@ -118,11 +118,11 @@ section { padding: var(--gap) clamp(1.25rem, 6vw, 6rem); }
   font-family: var(--font-mono);
   font-size: 0.85rem;
   letter-spacing: 0.02em;
-  color: var(--slate);
+  color: var(--rose-slate);
   position: relative;
   padding-bottom: 2px;
 }
-.nav a:hover { color: var(--moss-dark); }
+.nav a:hover { color: var(--rose-dark); }
 .nav a::after {
   content: "";
   position: absolute;
@@ -161,11 +161,11 @@ section { padding: var(--gap) clamp(1.25rem, 6vw, 6rem); }
 .status-tag {
   font-family: var(--font-mono);
   font-size: 0.8rem;
-  color: var(--slate);
+  color: var(--rose-slate);
   margin-bottom: 1.5rem;
 }
 .status-live {
-  color: var(--moss-dark);
+  color: var(--rose-dark);
   position: relative;
   padding-left: 1rem;
 }
@@ -177,7 +177,7 @@ section { padding: var(--gap) clamp(1.25rem, 6vw, 6rem); }
   transform: translateY(-50%);
   width: 6px; height: 6px;
   border-radius: 50%;
-  background: var(--moss);
+  background: var(--rose);
   animation: pulse 2s infinite;
 }
 @keyframes pulse {
@@ -192,13 +192,13 @@ section { padding: var(--gap) clamp(1.25rem, 6vw, 6rem); }
 }
 .hero-title em {
   font-style: italic;
-  color: var(--moss-dark);
+  color: var(--rose-dark);
 }
 
 .hero-sub {
   max-width: 32rem;
   font-size: 1.05rem;
-  color: var(--slate);
+  color: var(--rose-slate);
   margin: 1.5rem 0 2rem;
 }
 
@@ -212,7 +212,7 @@ section { padding: var(--gap) clamp(1.25rem, 6vw, 6rem); }
   padding-bottom: 2px;
   transition: color 0.2s ease, border-color 0.2s ease;
 }
-.hero-cta:hover { color: var(--moss-dark); border-color: var(--moss-dark); }
+.hero-cta:hover { color: var(--rose-dark); border-color: var(--rose-dark); }
 
 /* ============================================
    SOBRE
@@ -228,11 +228,11 @@ section { padding: var(--gap) clamp(1.25rem, 6vw, 6rem); }
 .ring-label {
   font-family: var(--font-mono);
   font-size: 0.75rem;
-  color: var(--slate);
+  color: var(--rose-slate);
   writing-mode: vertical-rl;
 }
 .sobre-content { max-width: 40rem; }
-.sobre-content p { color: var(--slate); }
+.sobre-content p { color: var(--rose-slate); }
 .sobre-content p:first-of-type { color: var(--ink); }
 
 /* ============================================
@@ -255,14 +255,14 @@ section { padding: var(--gap) clamp(1.25rem, 6vw, 6rem); }
   transition: border-color 0.2s ease, transform 0.2s ease;
 }
 .project-card:hover {
-  border-color: var(--moss);
+  border-color: var(--rose);
   transform: translateY(-3px);
 }
 .project-card.placeholder {
   border-style: dashed;
-  color: var(--slate);
+  color: var(--rose-slate);
 }
-.project-card.placeholder h3 { color: var(--slate); font-style: italic; }
+.project-card.placeholder h3 { color: var(--rose-slate); font-style: italic; }
 
 .project-tag {
   display: inline-block;
@@ -270,20 +270,20 @@ section { padding: var(--gap) clamp(1.25rem, 6vw, 6rem); }
   font-size: 0.7rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: var(--moss-dark);
-  background: rgba(82, 115, 92, 0.1);
+  color: var(--rose-dark);
+  background: rgba(201, 139, 160, 0.15);
   padding: 0.2rem 0.5rem;
   border-radius: var(--radius);
   margin-bottom: 0.75rem;
 }
 .project-card h3 { font-size: 1.15rem; margin-bottom: 0.5rem; }
-.project-card p { color: var(--slate); font-size: 0.95rem; margin-bottom: 1rem; }
+.project-card p { color: var(--rose-slate); font-size: 0.95rem; margin-bottom: 1rem; }
 
 .project-link {
   font-family: var(--font-mono);
   font-size: 0.8rem;
 }
-.project-link.disabled { color: var(--slate); font-style: italic; }
+.project-link.disabled { color: var(--rose-slate); font-style: italic; }
 
 /* ============================================
    CONTATO
@@ -292,7 +292,7 @@ section { padding: var(--gap) clamp(1.25rem, 6vw, 6rem); }
   border-top: 1px solid var(--parchment-dim);
   max-width: 34rem;
 }
-.contato p { color: var(--slate); }
+.contato p { color: var(--rose-slate); }
 .contact-links {
   display: flex;
   gap: 1.5rem;
@@ -302,10 +302,10 @@ section { padding: var(--gap) clamp(1.25rem, 6vw, 6rem); }
   font-family: var(--font-mono);
   font-size: 0.85rem;
   text-decoration: none;
-  border-bottom: 1px solid var(--slate);
+  border-bottom: 1px solid var(--rose-slate);
   padding-bottom: 2px;
 }
-.contact-link:hover { border-color: var(--amber); color: var(--moss-dark); }
+.contact-link:hover { border-color: var(--amber); color: var(--rose-dark); }
 
 /* ============================================
    FOOTER
@@ -315,7 +315,7 @@ section { padding: var(--gap) clamp(1.25rem, 6vw, 6rem); }
   padding: 2rem;
   font-family: var(--font-mono);
   font-size: 0.75rem;
-  color: var(--slate);
+  color: var(--rose-slate);
   border-top: 1px solid var(--parchment-dim);
 }
 
